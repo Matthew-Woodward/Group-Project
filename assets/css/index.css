@@ -4,10 +4,9 @@ body{
     background-size: cover;
     max-height: 600px;
 }
-
 #logo{
-    color:#f22f08;
-    line-height: 60px;
+    height:100px;
+    width:100px;
 }
 /* h1{
     font-family:'Unlock'cursive;
@@ -34,9 +33,10 @@ body{
     color:white;
     background-color: rgb(131, 100, 60);
 }
-.navbar-toggler{
-    color:rgb(131, 100, 60);
+.nav{
+    float:right;
 }
+
 .card-img-top{
     margin:auto;
     padding:15px;
