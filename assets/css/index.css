@@ -1,0 +1,86 @@
+body{
+    background-image:url(../images/mountains.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    max-height: 600px;
+}
+
+#logo{
+    color:#f22f08;
+    line-height: 60px;
+}
+/* h1{
+    font-family:'Unlock'cursive;
+} */
+.card-one{
+    font-family:'Love Ya Like A Sister'; 
+    background-color:#f22f08;
+    color:white;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black; 
+}  
+.card{
+    background-color: black;
+    color:gray;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black; 
+}
+#zipInfo{
+    width:5px;
+}
+.btn{
+    color:white;
+    background-color: rgb(131, 100, 60);
+}
+.navbar-toggler{
+    color:rgb(131, 100, 60);
+}
+.card-img-top{
+    margin:auto;
+    padding:15px;
+    height:400px;
+    width:535px;
+}
+@media screen and (max-width: 1160px) {
+    .card-img-top{
+      height:300px;
+      width:400px;
+    }
+  } 
+.d-block{
+    height:400px;
+    width:400px;
+    margin:auto;
+}
+.nav-link{
+    color:rgba(196, 66, 6, 0.911);
+}
+.col-sm-4{
+    margin:auto;
+    
+}
+.col-lg-6{
+    margin: auto;
+}
+
+
+.row {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.carousel-item{
+    background-color: black;
+}
+img {
+      filter: gray;
+      -webkit-filter: grayscale(1); 
+      -webkit-transition: all .8s ease-in-out;  
+    }
+
+    img:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+    }
