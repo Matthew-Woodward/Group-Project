@@ -18,7 +18,7 @@ $(document).ready(function () {
             lon
         };
     }
-    // checkbox "use current location/get location info"
+    // checkbox "use current location/get location info"s
 
     $('input[name="checkme"]').click(function () {
         if ($(this).prop("checked") == true) {
@@ -54,10 +54,10 @@ $(document).ready(function () {
             console.log(response);
 
             //display current weather data
-            $("#temp").text("Temperature (F) " + response.main.temp);
-            $("#humidity").text("Humidity: " + response.main.humidity);
-            $("#windSpeed").text("Wind Speed: " + response.wind.speed);
-            $("#conditions").text("Conditions: " + response.weather[0].description);
+            $("#temp").html("Temperature (F) " + response.main.temp);
+            $("#humidity").html("Humidity: " + response.main.humidity);
+            $("#windSpeed").html("Wind Speed: " + response.wind.speed);
+            $("#conditions").html("Conditions: " + response.weather[0].description);
         });
     });
 

@@ -10,14 +10,8 @@
     <title>Trail Tracker</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-    <!-- Our own CSS stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css" media="screen">
-    <link href="https://fonts.googleapis.com/css?family=Unlock" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Eater|Love+Ya+Like+A+Sister" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Eater|Love+Ya+Like+A+Sister');
-    </style>
+
+    <link rel="stylesheet" href="assets/css/index.css" media="screen">
 
 </head>
 
@@ -26,17 +20,17 @@
         <div class="container-fluid">
 
             <a class="navbar-brand" href="index.html" id="logo">Trail Tracker</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Home</a>
-                    </li>
-                    <a class="nav-link" href="Exadvice.html.html">Expert Advice</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Home</a>
+                        </li>
+                        <a class="nav-link" href="Exadvice.html.html">Expert Advice</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="">Contact Us</a>
@@ -62,23 +56,19 @@
                         <p class="card-text">Start your search for the best trails to hike and bike!</p>
                         <form id="search-form">
                             <label for="word-input">Enter Zip Code</label>
-                            <input type="
-                            <div class=" col-sm-4">
-                            <p>Check here to use current location&nbsp; <input type="checkbox" aria-label="Checkbox for following text input"></p>
-                    </div>
-                    <br>
-                    <div class=" col-sm-4">
-                        <p>check here to use current location &nbsp;
-                            <input type="checkbox" aria-label="Checkbox for following text input">
-                        </p>
-
+                            <input type="text" id="zipInput">
+                            <div class="col-sm-4">
+                                <p>Check here to use current location&nbsp;
+                                    <input type="checkbox" name="checkme" id="checkme" aria-label="Checkbox for following text input"></p>
+                            </div>
                         </form>
-                        <a href="#" class="btn btn-primary" id="Bike">Bike</a>
-                        <a href="#" class="btn btn-primary" id="Hike">Hike</a>
+                        <a href="#" class="btn btn-primary, pushButton" id="Bike">Bike</a>
+                        <a href="#" class="btn btn-primary pushButton" id="Hike">Hike</a>
                     </div>
                 </div>
             </div>
         </section>
+
         <div class="row">
             <div class="col-lg-6">
                 <div class="card">
@@ -105,21 +95,24 @@
                 <div class="card">
                     <img class="card-img-top" src="assets/images/IMG_2.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">GeoLocation Stuff</h5>
+                        <h5 class="card-title">Trail Info</h5>
                         <p class="card-text">Where am I? Can I search for the trail?</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">list item</li>
-                        <li class="list-group-item">list item</li>
-                        <li class="list-group-item">list item</li>
+                        <li class="list-group-item" id="maxDistance"></li>
+                        <li class="list-group-item" id="minDistance"></li>
+                        <li class="list-group-item" id="numResults"></li>
+                        <li class="list-group-item" id="results"></li>
                     </ul>
                     <div class="card-body">
                         <a href="#" class="card-link">Card link</a>
                         <a href="#" class="card-link">Another link</a>
                     </div>
                 </div>
+
             </div>
         </div>
+
     </main>
     <main class="container-fluid">
         <section class="row">
@@ -157,7 +150,9 @@
             </div>
         </section>
     </main>
+
     <!-- End of container -->
+
     <!-- Start of footer -->
     <footer class="footer">
         <div class="two-toned-footer-color"></div>
@@ -166,12 +161,17 @@
         </p>
     </footer>
     <!-- End of footer -->
+
     <!-- jQuery CDN -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Bootstrap CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./assets/javascript/weather.js"></script>
+
+
     <script type="text/javascript" src="./assets/javascript/hikebike.js"></script>
+    <script type="text/javascript" src="./assets/javascript/weather.js"></script>
 </body>
+
+
 
 </html>
