@@ -1,0 +1,174 @@
+body{
+    background-image:url(../images/mountains.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    max-height: 600px;
+}
+
+#logo{
+    color:#f22f08;
+    line-height: 60px;
+}
+/* h1{
+    font-family:'Unlock'cursive;
+} */
+.card-one{
+    font-family:'Love Ya Like A Sister';
+    background-color:#f22f08;
+    color:white;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black; 
+}
+.card{
+    background-color: black;
+    color:white;
+    border-width: 3px;
+    border-style: solid;
+    border
+
+#zipInfo{
+width: 5px;
+}
+
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: red;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .fa-user:hover {
+    color: #eee;
+  }
+.col-sm-4{
+    margin: auto;
+    
+}
+.check{
+    width: 20px;
+
+}
+
+.btn{
+    color:white;
+    background-color: rgb(131, 100, 60);
+}
+.navbar-toggler{
+    color:rgb(131, 100, 60);
+}
+.card-img-top{
+    margin:auto;
+    padding:15px;
+    height:400px;
+    width:535px;
+}
+@media screen and (max-width: 1160px) {
+    .card-img-top{
+      height:300px;
+      width:400px;
+    }
+  } 
+.d-block{
+    height:400px;
+    width:400px;
+    margin:auto;
+}
+.nav-link{
+    color:rgba(196, 66, 6, 0.911);
+}
+.col-sm-4{
+    margin:auto;
+    
+}
+.col-lg-6{
+    margin: auto;
+}
+
+
+.row {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.carousel-item{
+    background-color: black;
+}
+img {
+      filter: gray;
+      -webkit-filter: grayscale(1); 
+      -webkit-transition: all .8s ease-in-out;  
+    }
+
+    img:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+    }
