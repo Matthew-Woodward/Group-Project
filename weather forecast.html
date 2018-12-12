@@ -1,161 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
-    <title>Weather</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trail Tracker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/index.css" media="screen">
     <style>
-        /* Remove the navbar's default margin-bottom and rounded borders */
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-            color: #f22f08;
-        }
+        th, td {
+background-color: black;
+color: white
 
-        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-        .row.content {
-            height: 450px
-        }
-
-        /* Set gray background color and 100% height */
-        .sidenav {
-            padding-top: 20px;
-            background-color: #f1f1f1;
-            height: 100%;
-        }
-
-        /* Set black background color, white text and some padding */
-        footer {
-            background-color: #555;
-            color: #f22f08;
-            padding: 15px;
-        }
-
-        /* On small screens, set height to 'auto' for sidenav and grid */
-        @media screen and (max-width: 767px) {
-            .sidenav {
-                height: auto;
-                padding: 15px;
-            }
-
-            .row.content {
-                height: auto;
-            }
-        }
-
-        .header img {
-            float: left;
-            width: 100px;
-            height: 100px;
-            background: black;
-        }
-
-        .header h1 {
-            position: relative;
-            top: 18px;
-            left: 10px;
-        }
-
-        .img1 {
-            background-attachment: fixed;
-            background-size: cover;
-            max-height: 200px;
-        }
-
-        .jumbotron {
-
-            background-image: url("assets/images/bgimage.jpg");
-            background-size: cover;
-
-        }
-    </style>
+}
+</style>
 </head>
 
 <body>
-
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <div class="header">
-                    <img src="assets\images\logo.jpg" alt="logo" />
-                </div>
-                <a class="navbar-brand" href=""><img herf='assets\images\logo.jpg'></a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Expert Advice</a></li>
-                    <li><a href="#">Weather Forecast</a></li>
-                    <li><a href="#">Input</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="Exadvice.html">Expert Advice</a>
+                <!-- <a class="nav-item nav-link" href="weather forecast.html">Weather Forecast</a> -->
+                <a class="nav-item nav-link active" href="weather forecast.html">Weather Forecast<span class="sr-only">(current)</span></a>
+                <!-- <a class="nav-item nav-link disabled" href="inputpg.html">Maps</a> -->
+                <a class="nav-item nav-link disabled" href="contact.html">Contact Us</a>
             </div>
         </div>
+        <img src="assets/images/logo.jpg" id="logo">
     </nav>
-
-    <div class="jumbotron">
-        <div class="container text-center">
-            <img class="img1" src="assets\images\bgimage.jpg" style=" background-size: cover;">
-            <p>Some text</p>
+    <div class="container text-center">
+        <!-- <img class="img1" src="assets\images\bgimage.jpg" style=" background-size: cover;"> -->
+        <p>5 Day Forecast</p>
+        <form id="search-form">
+            <label for="word-input">Enter Zip Code</label>
+            <input type="text" id="zipInput">
+            <p>Check here to use current location&nbsp;
+                <input type="checkbox" name="checkme" id="checkme" aria-label="Checkbox for following text input"></p>
+            <a href="#" class="btn btn-primary, pushButton" id="5-day">Get Forecast</a>
+    </div>
+    <main class="container-fluid">
+        <div class="container text-center" style="margin:auto; width:fit-content;">
+            <table>
+                <tr>
+                    <th>Max Temp. / </th>
+                    <th>Min Temp. / </th>
+                    <th>Humidity / </th>
+                    <th>Winds / </th>
+                    <th>Sky Conditions / </th>
+                </tr>
+                <tr>
+                    <td id="511"></td>
+                    <td id="512"></td>
+                    <td id="513"></td>
+                    <td id="514"></td>
+                    <td id="515"></td>
+                </tr>
+                <tr>
+                    <td id="521"></td>
+                    <td id="522"></td>
+                    <td id="523"></td>
+                    <td id="524"></td>
+                    <td id="525"></td>
+                </tr>
+                <tr>
+                    <td id="531"></td>
+                    <td id="532"></td>
+                    <td id="533"></td>
+                    <td id="524"></td>
+                    <td id="525"></td>
+                </tr>
+                <tr>
+                    <td id="541"></td>
+                    <td id="542"></td>
+                    <td id="543"></td>
+                    <td id="544"></td>
+                    <td id="545"></td>
+                </tr>
+                <tr>
+                    <td id="551"></td>
+                    <td id="552"></td>
+                    <td id="553"></td>
+                    <td id="554"></td>
+                    <td id="555"></td>
+                </tr>
+            </table>
         </div>
-    </div>
-
-    <div class="container text-center" style="margin:auto; width:fit-content;">
-        <table>
-            <tr>
-                <td>row_1/col_1</td>
-                <td>col_2</td>
-                <td>col_3</td>
-                <td>col_4</td>
-                <td>col_5</td>
-            </tr>
-            <tr>
-                <td>row_2/row_2</td>
-                <td>col_2</td>
-                <td>col_3</td>
-                <td>col_4</td>
-                <td>col_5</td>
-            </tr>
-            <tr>
-                <td>row_3/col_3</td>
-                <td>col_2</td>
-                <td>col_3</td>
-                <td>col_4</td>
-                <td>col_5</td>
-            </tr>
-            <tr>
-                <td>row_4/col_4</td>
-                <td>col_2</td>
-                <td>col_3</td>
-                <td>col_4</td>
-                <td>col_5</td>
-            </tr>
-            <tr>
-                <td>row_5/col_5</td>
-                <td>col_2</td>
-                <td>col_3</td>
-                <td>col_4</td>
-                <td>col_5</td>
-            </tr>
-        </table>
-    </div>
-    <br>
-
-
-    <br>
-
-
-
-
-    <br>
-
-    <footer>
-        <p>Footer Text</p>
+    </main>
+    <footer class="footer">
+        <div class="two-toned-footer-color"></div>
+        <p class="text-muted text-muted-footer text-center">
+            &copy; Copyright H&B
+        </p>
     </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/javascript/5day.js"></script>
 
 </body>
 
