@@ -9,18 +9,39 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/index.css" media="screen">
     <style>
-        th, td {
-background-color: black;
-color: white
+        h1 {
+            color: #f22f08;
+        }
 
-}
-</style>
+        th {
+            background-color: #f22f08;
+            color: black;
+            line-height: 50px;
+        }
+
+        td {
+            background-color: black;
+            color: white;
+            line-height: 50px;
+        }
+
+        .col-lg-8 {
+            margin: auto;
+            background-color: black;
+            color: white;
+        }
+
+        #weather-img {
+            height: 300px;
+            width: 400px;
+        }
+    </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -35,70 +56,71 @@ color: white
         </div>
         <img src="assets/images/logo.jpg" id="logo">
     </nav>
-    <div class="container text-center">
-        <!-- <img class="img1" src="assets\images\bgimage.jpg" style=" background-size: cover;"> -->
-        <p>5 Day Forecast</p>
-        <form id="search-form">
-            <label for="word-input">Enter Zip Code</label>
-            <input type="text" id="zipInput">
-            <p>Check here to use current location&nbsp;
-                <input type="checkbox" name="checkme" id="checkme" aria-label="Checkbox for following text input"></p>
-            <a href="#" class="btn btn-primary, pushButton" id="5-day">Get Forecast</a>
-    </div>
-    <main class="container-fluid">
-        <div class="container text-center" style="margin:auto; width:fit-content;">
-            <table>
-                <tr>
-                    <th>Max Temp. / </th>
-                    <th>Min Temp. / </th>
-                    <th>Humidity / </th>
-                    <th>Winds / </th>
-                    <th>Sky Conditions / </th>
-                </tr>
-                <tr>
-                    <td id="511"></td>
-                    <td id="512"></td>
-                    <td id="513"></td>
-                    <td id="514"></td>
-                    <td id="515"></td>
-                </tr>
-                <tr>
-                    <td id="521"></td>
-                    <td id="522"></td>
-                    <td id="523"></td>
-                    <td id="524"></td>
-                    <td id="525"></td>
-                </tr>
-                <tr>
-                    <td id="531"></td>
-                    <td id="532"></td>
-                    <td id="533"></td>
-                    <td id="524"></td>
-                    <td id="525"></td>
-                </tr>
-                <tr>
-                    <td id="541"></td>
-                    <td id="542"></td>
-                    <td id="543"></td>
-                    <td id="544"></td>
-                    <td id="545"></td>
-                </tr>
-                <tr>
-                    <td id="551"></td>
-                    <td id="552"></td>
-                    <td id="553"></td>
-                    <td id="554"></td>
-                    <td id="555"></td>
-                </tr>
-            </table>
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="container text-center">
+                <h1>5 Day Forecast</h1>
+                <form id="search-form">
+                    <label for="word-input">Enter Zip Code</label>
+                    <input type="text" id="zipInput">
+                    <p>Check here to use current location&nbsp;
+                        <input type="checkbox" name="checkme" id="checkme" aria-label="Checkbox for following text input"></p>
+                    <a href="#" class="btn btn-secondary, pushButton" id="5-day">Get Forecast</a>
+            </div>
         </div>
-    </main>
-    <footer class="footer">
-        <div class="two-toned-footer-color"></div>
-        <p class="text-muted text-muted-footer text-center">
-            &copy; Copyright H&B
-        </p>
-    </footer>
+    </div>
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="container text-center">
+                <img src="assets/images/IMG_1.jpg" id="weather-img">
+                <table class="col-lg-8">
+                    <tr>
+                        <th>Max Temp. / </th>
+                        <th>Min Temp. / </th>
+                        <th>Humidity / </th>
+                        <th>Winds / </th>
+                        <th>Sky Conditions / </th>
+                    </tr>
+                    <tr>
+                        <td id="511"></td>
+                        <td id="512"></td>
+                        <td id="513"></td>
+                        <td id="514"></td>
+                        <td id="515"></td>
+                    </tr>
+                    <tr>
+                        <td id="521"></td>
+                        <td id="522"></td>
+                        <td id="523"></td>
+                        <td id="524"></td>
+                        <td id="525"></td>
+                    </tr>
+                    <tr>
+                        <td id="531"></td>
+                        <td id="532"></td>
+                        <td id="533"></td>
+                        <td id="524"></td>
+                        <td id="525"></td>
+                    </tr>
+                    <tr>
+                        <td id="541"></td>
+                        <td id="542"></td>
+                        <td id="543"></td>
+                        <td id="544"></td>
+                        <td id="545"></td>
+                    </tr>
+                    <tr>
+                        <td id="551"></td>
+                        <td id="552"></td>
+                        <td id="553"></td>
+                        <td id="554"></td>
+                        <td id="555"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./assets/javascript/5day.js"></script>

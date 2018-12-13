@@ -9,18 +9,23 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/index.css" media="screen">
     <style>
-        th, td {
-background-color: black;
-color: white
+        .col-md-12 {
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: auto;
+        }
 
-}
-</style>
+        h1 {
+            color: orangered;
+        }
+    </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -37,7 +42,7 @@ color: white
     </nav>
     <div class="container text-center">
         <!-- <img class="img1" src="assets\images\bgimage.jpg" style=" background-size: cover;"> -->
-        <p>Trail Info</p>
+        <h1>Trail Info</h1>
         <!-- <form id="search-form">
             <label for="word-input">Enter Zip Code</label>
             <input type="text" id="zipInput">
@@ -46,16 +51,19 @@ color: white
             <a href="#" class="btn btn-primary, pushButton" id="5-day">Get Forecast</a>
     </div> -->
         <main class="container-fluid">
-            <div class="container text-center" style="margin:auto; width:fit-content;" id="trailInfo">
-
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container text-center" style="margin:auto; width:fit-content;" id="trailInfo">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
             </div>
         </main>
-        <footer class="footer">
-            <div class="two-toned-footer-color"></div>
-            <p class="text-muted text-muted-footer text-center">
-                &copy; Copyright H&B
-            </p>
-        </footer>
+
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="./assets/javascript/trails.js"></script>

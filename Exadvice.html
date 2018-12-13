@@ -60,6 +60,15 @@
             }
         }
 
+        #logo {
+            width: 100px;
+            height: 100px;
+        }
+
+        #navbarNavAltMarkup {
+            color: #f22f08;
+        }
+
         .header img {
             float: left;
             width: 100px;
@@ -74,6 +83,10 @@
             text-shadow: 2px 2px 5px #f22f08;
         }
 
+        h1 {
+            color: #f22f08;
+        }
+
         body {
             background-image: url("assets/images/bgimage.jpg");
             background-attachment: fixed;
@@ -84,96 +97,90 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <div class="header">
-                    <img src="assets\images\logo.jpg" alt="logo" />
-                </div>
-                <a class="navbar-brand" href=""><img herf='assets\images\logo.jpg'></a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="">Expert Advice</a></li>
-                    <li><a href="weather forecast.html">Weather Forecast</a></li>
-                    <li><a href="#">Input</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home
+                    <a class="nav-item nav-link active" href="Exadvice.html">Expert Advice</a><span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="weather forecast.html">Weather Forecast</a>
+                <a class="nav-item nav-link disabled" href="contact.html">Contact Us</a>
             </div>
         </div>
+        <img src="assets/images/logo.jpg" id="logo">
     </nav>
 
-    <h1>Hello, Biker and Hikers!</h1>
+    <h1>Welcome, Bikers and Hikers! looking for more information? This is a good place to find good web pages to look up
+        informatinon on your mountain bike & hiking trails.</h1>
     <div class="card-group">
         <div class="card">
             <a href="http://www.pedbikeinfo.org/community/tips_bicyclist.cfm" target="_blank">
                 <img class="card-img-top" src="assets\images\Thacker-Mountain-Trails_bike.jpg" alt="Card image cap"></a>
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
+                <h5 class="card-title">The Pedestrian and Bicycle Information Center</h5>
+                <p class="card-text">The PBIC is supported by the Federal Highway Administration (FHWA). Its mission has
+                    been to improve the quality of life in communities through the increase of safe walking and bicycling
+                    as a viable means of transportation and physical activity.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="assets\images\biketrail(2).jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
+            <a href="http://www.env.gov.bc.ca/bcparks/visiting/" target="_blank">
+                <img class="card-img-top" src="assets\images\biketrail(4).jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">BC Park info</h5>
+                    <p class="card-text">The BC Park website has supporting information about park guidence to the things
+                        you may encounter in the parks.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
         </div>
-        <div class="card">
-            <img class="card-img-top" href="https://www.nobarriersusa.org/2015/07/27/tips-to-avoid-altitude-sickness/?gclid=Cj0KCQiA_4jgBRDhARIsADezXcgglqfmA_tY4vmX3OjHZJ9brzkA0KJR5qOHj2Xv3vspn9LyE9dzW9QaAtrWEALw_wcB"
-                src="assets\images\biketrail(4).jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supportinhg the safty for bikers and hikers.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-    </div>
-    <div class="card-group">
-        <div class="card">
-            <img class="card-img-top" src="assets\images\hiking.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="assets\images\hiking(2).jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="assets\images\hiking(3).jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-    </div>
-    <footer>
 
-    </footer>
+        <div class="card-group">
+            <div class="card">
+                <a href="http://www.hikesafe.com/index.php?page=leave-your-plans" target="_blank">
+                    <img class="card-img-top" src="assets\images\hiking.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Hike Safe</h5>
+                        <p class="card-text">This webpage helps out with how to be safe while hiking.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+            </div>
+            <div class="card">
+                <a href="https://americanhiking.org/hiking-resources/?gclid=Cj0KCQiAgMPgBRDDARIsAOh3uyJ0dpXCF4jDBVXYgXsGaTvEI_wDdSegYP12Cjxj_rFC__Ncmb4B-FYaAoMgEALw_wcB#hikes-near-you"
+                    target="_blank">
+                    <img class="card-img-top" src="assets\images\hiking(2).jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title"> Hiking communities</h5>
+                        <p class="card-text">This webpage helps with findidng communitiesin in hiking.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+            </div>
+            <div class="card">
+                <a href="http://www.comehike.com/hiking.php" target="_blank">
+                    <img class="card-img-top" src="assets\images\hiking(3).jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Everything About Hiking</h5>
+                        <p class="card-text">This is a helpfull webpage where you will find more information about what to
+                            take on everything about hiking.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+            </div>
+        </div>
+        <footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
